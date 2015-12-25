@@ -31,6 +31,7 @@ function sskadmin(e) {
 }
 //管理员判断结束
 //显UA开始
+
 function ua(e) {
     var r = new Array;
     var outputer = '';
