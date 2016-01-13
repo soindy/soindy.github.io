@@ -3,17 +3,53 @@
 <head>
   <meta charset="utf-8">
   
-  <title>soindy</title>
+  <title>WatchKit Programming Guide(WatchKit开发指南)官方翻译及总结 | soindy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="soindy | iOS | 程序媛 | 软件开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="soindy">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="OverviewDeveloping for Apple WatchApple Watch可以让用户以一种很私密,不招摇的样式查看信息(官方文档是这样的哈,但是我想大多数人不会不招摇的查看Apple Watch上的信息😂).用户可以在不拿出手机的情况下,通过查看Apple Watch快速的获取重要的信息.Apple Watch Home screen:
+
+
+Apple Watch app由两个独">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WatchKit Programming Guide(WatchKit开发指南)官方翻译及总结">
+<meta property="og:url" content="http://yoursite.com/2016/01/04/WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结/index.html">
 <meta property="og:site_name" content="soindy">
-<meta property="og:description" content="soindy | iOS | 程序媛 | 软件开发">
+<meta property="og:description" content="OverviewDeveloping for Apple WatchApple Watch可以让用户以一种很私密,不招摇的样式查看信息(官方文档是这样的哈,但是我想大多数人不会不招摇的查看Apple Watch上的信息😂).用户可以在不拿出手机的情况下,通过查看Apple Watch快速的获取重要的信息.Apple Watch Home screen:
+
+
+Apple Watch app由两个独">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/AppleWatchHumanInterfaceGuidelineswatch_hero_2x.png?imageMogr2/thumbnail/!100p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/AppleWatchHumanInterfaceGuidelinestarget_structure_2x.png?imageMogr2/thumbnail/!100p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuideedit_scheme_menu_2x.png?imageMogr2/thumbnail/!100p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuideduplicate_scheme_2x.png?imageMogr2/thumbnail/!100p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidePushNotificationPayload.apns_2x.png?imageMogr2/thumbnail/!100p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuide275E78CC-778A-46B4-A883-B8380B3FE38B.jpg">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidelaunch_cycle_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidewatch_app_lifecycle_simple_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidestoryboard_layout_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidescalable_text_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidecreateanext-pageseguebetweeninterfacecontrollers.jpg?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuideformatted_text_attributes_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuideActionmethodsforinterfaceobject.jpg?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidetext_input_phrases_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidecontext_menu_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuideConfiguringaShareAppGrouptoStore.jpg?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuideglance_lister_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuideglance_interface_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuideshortlook_calendar_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidelonglook_calendar_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidenotification_static_dynamic_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidenotification_process_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidenotification_type_config_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidenotification_design_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/WatchKitProgrammingGuidenotification_event_cycle_2x.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/AppleWatchHumanInterfaceGuidelinesC3DA6431-982D-4C2C-9A75-75E71081CE91.jpg">
+<meta property="og:updated_time" content="2016-01-13T08:46:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="soindy">
-<meta name="twitter:description" content="soindy | iOS | 程序媛 | 软件开发">
+<meta name="twitter:title" content="WatchKit Programming Guide(WatchKit开发指南)官方翻译及总结">
+<meta name="twitter:description" content="OverviewDeveloping for Apple WatchApple Watch可以让用户以一种很私密,不招摇的样式查看信息(官方文档是这样的哈,但是我想大多数人不会不招摇的查看Apple Watch上的信息😂).用户可以在不拿出手机的情况下,通过查看Apple Watch快速的获取重要的信息.Apple Watch Home screen:
+
+
+Apple Watch app由两个独">
   
   
     <link rel="icon" href="/favicon.png">
@@ -21,9 +57,6 @@
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-    
-    
   
 </head>
 <body>
@@ -183,9 +216,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/01/04/WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结/" class="article-date">
@@ -201,12 +232,27 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/04/WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结/">WatchKit Programming Guide(WatchKit开发指南)官方翻译及总结</a>
+    <h1 class="article-title" itemprop="name">
+      WatchKit Programming Guide(WatchKit开发指南)官方翻译及总结
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Apple-Watch/">Apple Watch</a><a class="article-category-link" href="/categories/Apple-Watch/软件开发/">软件开发</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Apple-Watch/">Apple Watch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/官方文档翻译/">官方文档翻译</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -695,206 +741,173 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Apple-Watch/">Apple Watch</a><a class="article-category-link" href="/categories/Apple-Watch/软件开发/">软件开发</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Apple-Watch/">Apple Watch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/官方文档翻译/">官方文档翻译</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
     
-        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-        <script>
-            var yiliaConfig = {
-            fancybox: true,
-            mathjax: true,
-            animate: true,
-            isHome: true,
-            isPost: false,
-            isArchive: false,
-            isTag: false,
-            isCategory: false,
-            open_in_new: false
-            }
-        </script>
-        
-
-  
-    <article id="post-Hexo常用命令" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/01/04/Hexo常用命令/" class="article-date">
-      <time datetime="2016-01-04T08:42:40.000Z" itemprop="datePublished">2016-01-04</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/04/Hexo常用命令/">Hexo常用命令</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              Hexo常用命令.
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/常用工具/">常用工具</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/01/04/Hexo常用命令/#more">more >></a>
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/01/04/WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结/">WatchKit Programming Guide(WatchKit开发指南)官方翻译及总结</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 soindy 的个人博客">soindy</a></p>
+        <p><span>发布时间:</span>2016年01月04日 - 17时05分</p>
+        <p><span>最后更新:</span>2016年01月13日 - 16时46分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/01/04/WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结/" title="WatchKit Programming Guide(WatchKit开发指南)官方翻译及总结">http://yoursite.com/2016/01/04/WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/01/04/WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结/　　作者: soindy" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-        <script>
-            var yiliaConfig = {
-            fancybox: true,
-            mathjax: true,
-            animate: true,
-            isHome: true,
-            isPost: false,
-            isArchive: false,
-            isTag: false,
-            isCategory: false,
-            open_in_new: false
-            }
-        </script>
-        
-
-  
-    <article id="hexo-Markdown 实现页面内部跳转" class="article article-type-hexo" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/29/Markdown 实现页面内部跳转/" class="article-date">
-      <time datetime="2015-12-29T06:12:23.000Z" itemprop="datePublished">2015-12-29</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/29/Markdown 实现页面内部跳转/">Markdown实现页面内部跳转</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              Markdown实现页面内部的跳转.
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Markdown/">Markdown</a><a class="article-category-link" href="/categories/Markdown/代码片段/">代码片段</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/代码片段/">代码片段</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/12/29/Markdown 实现页面内部跳转/#more">more >></a>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
-      
-      <div class="clearfix"></div>
     </div>
-    
-  </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/01/04/Hexo常用命令/">
+                    Hexo常用命令
+                </a>
+            </div>
+        
+    </nav>
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.</span> <span class="toc-text">Overview</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Developing_for_Apple_Watch"><span class="toc-number">1.1.</span> <span class="toc-text">Developing for Apple Watch</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#The_Watch_App"><span class="toc-number">1.1.1.</span> <span class="toc-text">The Watch App</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#The_Glance_Interface"><span class="toc-number">1.1.2.</span> <span class="toc-text">The Glance Interface</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Custom_Interfaces_for_Local_and_Remote_Notifications"><span class="toc-number">1.1.3.</span> <span class="toc-text">Custom Interfaces for Local and Remote Notifications</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Complications"><span class="toc-number">1.1.4.</span> <span class="toc-text">Complications</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Designing_Your_User_Interface"><span class="toc-number">1.1.5.</span> <span class="toc-text">Designing Your User Interface</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Configuring_Your_Xcode_Project"><span class="toc-number">1.2.</span> <span class="toc-text">Configuring Your Xcode Project</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#u5728_u73B0_u6709_u7684iOS_u9879_u76EE_u6DFB_u52A0Watch_App"><span class="toc-number">1.2.1.</span> <span class="toc-text">在现有的iOS项目添加Watch App</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#App_Target_u7ED3_u6784"><span class="toc-number">1.2.2.</span> <span class="toc-text">App Target结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Build_2C_Run_2C_and_Debug_u9636_u6BB5Xcode_u8FD8_u4F1A_u4E3AWatch_app_u7684bulid_u548Cdebug_u5355_u72EC_u7684_u521B_u5EFA_u4E00_u4E2Abuild_scheme"><span class="toc-number">1.2.3.</span> <span class="toc-text">Build, Run, and Debug阶段Xcode还会为Watch app的bulid和debug单独的创建一个build scheme.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#u6D4B_u8BD5_u6307_u5B9A_u901A_u77E5_u7684_u8D1F_u8F7D"><span class="toc-number">1.2.4.</span> <span class="toc-text">测试指定通知的负载</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Watch_App_Architecture"><span class="toc-number">1.3.</span> <span class="toc-text">Watch App Architecture</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#u754C_u9762_u63A7_u5236_u5668"><span class="toc-number">1.3.1.</span> <span class="toc-text">界面控制器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Watch_App_u7684_u751F_u547D_u5468_u671F"><span class="toc-number">1.3.2.</span> <span class="toc-text">Watch App的生命周期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#u5728_u6A21_u62DF_u5668_u4E0A_u6D4B_u8BD5"><span class="toc-number">1.3.3.</span> <span class="toc-text">在模拟器上测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#u548CiOS_app_u5171_u4EAB_u6570_u636E"><span class="toc-number">1.3.4.</span> <span class="toc-text">和iOS app共享数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#u548CiOS_app_u8FDB_u884C_u901A_u4FE1"><span class="toc-number">1.3.5.</span> <span class="toc-text">和iOS app进行通信</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Leveraging_iOS_Technologies"><span class="toc-number">1.4.</span> <span class="toc-text">Leveraging iOS Technologies</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Handoff"><span class="toc-number">1.4.1.</span> <span class="toc-text">Handoff</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Remote_Control_Events_and_Now_Playing_Information"><span class="toc-number">1.4.2.</span> <span class="toc-text">Remote Control Events and Now Playing Information</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Watch_Apps"><span class="toc-number">2.</span> <span class="toc-text">Watch Apps</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#UI_Essentials"><span class="toc-number">2.1.</span> <span class="toc-text">UI Essentials</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Assembling_Your_Storyboard_Scenes"><span class="toc-number">2.1.1.</span> <span class="toc-text">Assembling Your Storyboard Scenes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Accommodating_Different_Display_Sizes"><span class="toc-number">2.1.2.</span> <span class="toc-text">Accommodating Different Display Sizes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Updating_Your_Interface_at_Runtime"><span class="toc-number">2.1.3.</span> <span class="toc-text">Updating Your Interface at Runtime</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Setting_Your_App_u2019s_Key_Color"><span class="toc-number">2.1.4.</span> <span class="toc-text">Setting Your App’s Key Color</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Internationalizing_Your_Interface"><span class="toc-number">2.1.5.</span> <span class="toc-text">Internationalizing Your Interface</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Interface_Navigation"><span class="toc-number">2.2.</span> <span class="toc-text">Interface Navigation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#implementing_a_Page-Based_Interface"><span class="toc-number">2.2.1.</span> <span class="toc-text">implementing a Page-Based Interface</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Implementing_a_Hierarchical_Interface"><span class="toc-number">2.2.2.</span> <span class="toc-text">Implementing a Hierarchical Interface</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Presenting_Interface_Controllers_Modally"><span class="toc-number">2.2.3.</span> <span class="toc-text">Presenting Interface Controllers Modally</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Interface_Objects"><span class="toc-number">2.3.</span> <span class="toc-text">Interface Objects</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Creating_an_Interface_Object"><span class="toc-number">2.3.1.</span> <span class="toc-text">Creating an Interface Object</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Configuring_Your_Interface_at_Design_Time"><span class="toc-number">2.3.2.</span> <span class="toc-text">Configuring Your Interface at Design Time</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Changing_Your_Interface_at_Runtime"><span class="toc-number">2.3.3.</span> <span class="toc-text">Changing Your Interface at Runtime</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Responding_to_User_Interactions"><span class="toc-number">2.3.4.</span> <span class="toc-text">Responding to User Interactions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hiding_Interface_Objects"><span class="toc-number">2.3.5.</span> <span class="toc-text">Hiding Interface Objects</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Text_and_Labels"><span class="toc-number">2.4.</span> <span class="toc-text">Text and Labels</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Using_Custom_Fonts"><span class="toc-number">2.4.1.</span> <span class="toc-text">Using Custom Fonts</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Managing_Text_Input"><span class="toc-number">2.4.2.</span> <span class="toc-text">Managing Text Input</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Internationalizing_Your_Text_Code"><span class="toc-number">2.4.3.</span> <span class="toc-text">Internationalizing Your Text Code</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Images"><span class="toc-number">2.5.</span> <span class="toc-text">Images</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Specifying_Your_Image_Assets"><span class="toc-number">2.5.1.</span> <span class="toc-text">Specifying Your Image Assets</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Using_Named_Images_to_Improve_Performance"><span class="toc-number">2.5.2.</span> <span class="toc-text">Using Named Images to Improve Performance</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Caching_Images_on_the_Device"><span class="toc-number">2.5.3.</span> <span class="toc-text">Caching Images on the Device</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tables"><span class="toc-number">2.6.</span> <span class="toc-text">Tables</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Configuring_Row_Controllers"><span class="toc-number">2.6.1.</span> <span class="toc-text">Configuring Row Controllers</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#u5728storyboard_u4E2D_u914D_u7F6E_u754C_u9762_u63A7_u5236_u5668"><span class="toc-number">2.6.1.1.</span> <span class="toc-text">在storyboard中配置界面控制器</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Configuring_the_Table_u2019s_Contents_at_Runtime"><span class="toc-number">2.6.2.</span> <span class="toc-text">Configuring the Table’s Contents at Runtime</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Handling_Row_Selections"><span class="toc-number">2.6.3.</span> <span class="toc-text">Handling Row Selections</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Context_Menus"><span class="toc-number">2.7.</span> <span class="toc-text">Context Menus</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Designing_Your_Menu_Items"><span class="toc-number">2.7.1.</span> <span class="toc-text">Designing Your Menu Items</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Adding_a_Context_Menu_to_an_Interface_Controller"><span class="toc-number">2.7.2.</span> <span class="toc-text">Adding a Context Menu to an Interface Controller</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Handling_Taps_in_a_Menu_Item"><span class="toc-number">2.7.3.</span> <span class="toc-text">Handling Taps in a Menu Item</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Settings"><span class="toc-number">2.8.</span> <span class="toc-text">Settings</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Creating_Your_Settings_Bundle"><span class="toc-number">2.8.1.</span> <span class="toc-text">Creating Your Settings Bundle</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Configuring_a_Shared_App_Group_to_Store_Your_Settings"><span class="toc-number">2.8.2.</span> <span class="toc-text">Configuring a Shared App Group to Store Your Settings</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Accessing_Settings_at_Runtime"><span class="toc-number">2.8.3.</span> <span class="toc-text">Accessing Settings at Runtime</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Glance"><span class="toc-number">3.</span> <span class="toc-text">Glance</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Glance_Essentials"><span class="toc-number">3.1.</span> <span class="toc-text">Glance Essentials</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#The_Glance_Life_Cycle"><span class="toc-number">3.1.1.</span> <span class="toc-text">The Glance Life Cycle</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Glance_Interface_Guidelines"><span class="toc-number">3.1.2.</span> <span class="toc-text">Glance Interface Guidelines</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Managing_Your_Glance_Interface"><span class="toc-number">3.2.</span> <span class="toc-text">Managing Your Glance Interface</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Adding_a_Glance_Interface_to_Your_App"><span class="toc-number">3.2.1.</span> <span class="toc-text">Adding a Glance Interface to Your App</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Implementing_and_Updating_a_Glance_Interface_Controller"><span class="toc-number">3.2.2.</span> <span class="toc-text">Implementing and Updating a Glance Interface Controller</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Customizing_App_Launch_from_Your_Glance"><span class="toc-number">3.2.3.</span> <span class="toc-text">Customizing App Launch from Your Glance</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notifications"><span class="toc-number">4.</span> <span class="toc-text">Notifications</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Notification_Essentials"><span class="toc-number">4.1.</span> <span class="toc-text">Notification Essentials</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#The_Short-Look_Interface"><span class="toc-number">4.1.1.</span> <span class="toc-text">The Short-Look Interface</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#The_Long-Look_Interface"><span class="toc-number">4.1.2.</span> <span class="toc-text">The Long-Look Interface</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Adding_Action_Buttons_to_Notifications"><span class="toc-number">4.1.3.</span> <span class="toc-text">Adding Action Buttons to Notifications</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Responding_to_Taps_in_Action_Buttons"><span class="toc-number">4.1.4.</span> <span class="toc-text">Responding to Taps in Action Buttons</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Managing_a_Custom_Long_Look_Interface"><span class="toc-number">4.2.</span> <span class="toc-text">Managing a Custom Long Look Interface</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Adding_a_Custom_Notification_Interface_to_Your_App"><span class="toc-number">4.2.1.</span> <span class="toc-text">Adding a Custom Notification Interface to Your App</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Configuring_the_Category_of_a_Custom_Interface"><span class="toc-number">4.2.2.</span> <span class="toc-text">Configuring the Category of a Custom Interface</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Configuring_a_Static_Notification_Interface"><span class="toc-number">4.2.3.</span> <span class="toc-text">Configuring a Static Notification Interface</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Configuring_the_Dynamic_Notification_Interface"><span class="toc-number">4.2.4.</span> <span class="toc-text">Configuring the Dynamic Notification Interface</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Designing_Your_Dynamic_Interface"><span class="toc-number">4.2.4.1.</span> <span class="toc-text">Designing Your Dynamic Interface</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Configuring_Your_Dynamic_Interface_at_Runtime"><span class="toc-number">4.2.4.2.</span> <span class="toc-text">Configuring Your Dynamic Interface at Runtime</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Testing_Your_Custom_Interface"><span class="toc-number">4.2.5.</span> <span class="toc-text">Testing Your Custom Interface</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Revision_History"><span class="toc-number">5.</span> <span class="toc-text">Revision History</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Document_Revision_History"><span class="toc-number">5.1.</span> <span class="toc-text">Document Revision History</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+    var toc_button = document.getElementById("tocButton");
+    var toc_div = document.getElementById("toc");
+    toc_button.onclick=function() {
+        if (toc_div.style.display == "none") {
+            toc_div.style.display = "block";
+            toc_button.value = "隐藏目录";
+            document.getElementById("switch-btn").style.display = "none";
+            document.getElementById("switch-area").style.display = "none";
+        }
+        else {
+            toc_div.style.display = "none";
+            toc_button.value = "显示目录";
+            document.getElementById("switch-btn").style.display = "block";
+            document.getElementById("switch-area").style.display = "block";
+        }
+    }
+
+    if ($(".toc").length < 1) {
+        $("#toc").css("display","none");
+        $("#tocButton").css("display","none");
+        $(".switch-btn").css("display","block");
+        $(".switch-area").css("display","block");
+    }
+</script>
+
+
+
+
+
+<div class="share">
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+    <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+    <a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+    </div>
+    <script>
+        window._bd_share_config={
+            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+
+    <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/01/04/WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结/" data-title="WatchKit Programming Guide(WatchKit开发指南)官方翻译及总结" data-url="http://yoursite.com/2016/01/04/WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"soindy"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        // ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.src = 'http://soindy.github.io/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
 
 
 
 
 
 
+    <style>
+        #scroll {
+            display: none;
+        }
+    </style>
+    <div class="scroll" id="scroll-with-comments">
+        <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+        <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+        <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    </div>
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/01/04/Hexo常用命令/" title="下一篇: Hexo常用命令">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/01/04/WatchKit-Programming-Guide-Apple-Watch开发指南官方翻译及总结/">WatchKit Programming Guide(WatchKit开发指南)官方翻译及总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/04/Hexo常用命令/">Hexo常用命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/29/Markdown 实现页面内部跳转/">Markdown实现页面内部跳转</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/">Markdown设置图片大小和对齐方式等操作</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/24/Apple Watch Human Interface Guidelines/">Apple Watch Human Interface Guidelines(Watch人机交互指南)官方文档翻译</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/24/first/">初′</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200);
+            }
+            else {
+                $(".switch-btn, .switch-area").toggle(200);
+            }
+        })
+    </script>
 
 
 
@@ -906,8 +919,8 @@
             fancybox: true,
             mathjax: true,
             animate: true,
-            isHome: true,
-            isPost: false,
+            isHome: false,
+            isPost: true,
             isArchive: false,
             isTag: false,
             isCategory: false,
@@ -915,263 +928,6 @@
             }
         </script>
         
-
-  
-    <article id="hexo-Markdown设置图片大小和对齐方式等操作" class="article article-type-hexo" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/" class="article-date">
-      <time datetime="2015-12-28T03:47:59.000Z" itemprop="datePublished">2015-12-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/">Markdown设置图片大小和对齐方式等操作</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              Markdown设置图片大小和对齐方式等操作.
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Markdown/">Markdown</a><a class="article-category-link" href="/categories/Markdown/代码片段/">代码片段</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/代码片段/">代码片段</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-        <script>
-            var yiliaConfig = {
-            fancybox: true,
-            mathjax: true,
-            animate: true,
-            isHome: true,
-            isPost: false,
-            isArchive: false,
-            isTag: false,
-            isCategory: false,
-            open_in_new: false
-            }
-        </script>
-        
-
-  
-    <article id="hexo-Apple Watch Human Interface Guidelines" class="article article-type-hexo" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/24/Apple Watch Human Interface Guidelines/" class="article-date">
-      <time datetime="2015-12-24T11:12:23.000Z" itemprop="datePublished">2015-12-24</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/24/Apple Watch Human Interface Guidelines/">Apple Watch Human Interface Guidelines(Watch人机交互指南)官方文档翻译</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              本文为Apple Watch的人机交互指南官方文档翻译及个人总结.因为产品设计不仅是产品和美工的事,同样也是开发人员所必不可少的能力.
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Apple-Watch/">Apple Watch</a><a class="article-category-link" href="/categories/Apple-Watch/产品设计/">产品设计</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Apple-Watch/">Apple Watch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品设计/">产品设计</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/人机交互指南/">人机交互指南</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/官方文档翻译/">官方文档翻译</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/12/24/Apple Watch Human Interface Guidelines/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-        <script>
-            var yiliaConfig = {
-            fancybox: true,
-            mathjax: true,
-            animate: true,
-            isHome: true,
-            isPost: false,
-            isArchive: false,
-            isTag: false,
-            isCategory: false,
-            open_in_new: false
-            }
-        </script>
-        
-
-  
-    <article id="hexo-first" class="article article-type-hexo" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/24/first/" class="article-date">
-      <time datetime="2015-12-24T03:47:59.000Z" itemprop="datePublished">2015-12-24</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/24/first/">初′</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              征途开启..
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/soindy/">soindy</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/12/24/first/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-        <script>
-            var yiliaConfig = {
-            fancybox: true,
-            mathjax: true,
-            animate: true,
-            isHome: true,
-            isPost: false,
-            isArchive: false,
-            isTag: false,
-            isCategory: false,
-            open_in_new: false
-            }
-        </script>
-        
-
-  
-  
 </div>
       <footer id="footer">
     <div class="outer">
@@ -1199,20 +955,6 @@
 </footer>
     </div>
     
-    <script>
-        var yiliaConfig = {
-            fancybox: false,
-            mathjax: true,
-            animate: true,
-            isHome: true,
-            isPost: false,
-            isArchive: false,
-            isTag: false,
-            isCategory: false,
-            open_in_new: false
-        }
-    </script>
-
 
 <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="/js/main.js" type="text/javascript"></script>
