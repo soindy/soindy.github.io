@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Markdown实现页面内部跳转 | soindy</title>
+  <title>Xcode报错: OS version lower than deployment target | soindy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Markdown实现页面内部的跳转.">
+  <meta name="description" content="Xcode报错 OS version lower than deployment target.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown实现页面内部跳转">
-<meta property="og:url" content="http://yoursite.com/2015/12/29/Markdown 实现页面内部跳转/index.html">
+<meta property="og:title" content="Xcode报错: OS version lower than deployment target">
+<meta property="og:url" content="http://yoursite.com/2015/12/24/iOS报错-OS-version-lower-than-deployment-target/index.html">
 <meta property="og:site_name" content="soindy">
-<meta property="og:description" content="Markdown实现页面内部的跳转.">
-<meta property="og:updated_time" content="2015-12-29T07:15:01.000Z">
+<meta property="og:description" content="Xcode报错 OS version lower than deployment target.">
+<meta property="og:image" content="http://7xpl1c.com1.z0.glb.clouddn.com/BC410E27-6EAE-40B7-AA9A-5AA390CBCBBC.jpg?imageMogr2/thumbnail/!50p">
+<meta property="og:updated_time" content="2016-01-14T07:19:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown实现页面内部跳转">
-<meta name="twitter:description" content="Markdown实现页面内部的跳转.">
+<meta name="twitter:title" content="Xcode报错: OS version lower than deployment target">
+<meta name="twitter:description" content="Xcode报错 OS version lower than deployment target.">
   
   
     <link rel="icon" href="/favicon.png">
@@ -181,11 +182,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="hexo-Markdown 实现页面内部跳转" class="article article-type-hexo" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-iOS报错-OS-version-lower-than-deployment-target" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/12/29/Markdown 实现页面内部跳转/" class="article-date">
-      <time datetime="2015-12-29T06:12:23.000Z" itemprop="datePublished">2015-12-29</time>
+      <a href="/2015/12/24/iOS报错-OS-version-lower-than-deployment-target/" class="article-date">
+      <time datetime="2015-12-24T11:12:23.000Z" itemprop="datePublished">2015-12-24</time>
 </a>
     </div>
   
@@ -198,7 +199,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Markdown实现页面内部跳转
+      Xcode报错: OS version lower than deployment target
     </h1>
   
 
@@ -207,13 +208,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Markdown/">Markdown</a><a class="article-category-link" href="/categories/Markdown/代码片段/">代码片段</a>
+    <a class="article-category-link" href="/categories/Xcode/">Xcode</a><a class="article-category-link" href="/categories/Xcode/watchOS/">watchOS</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/代码片段/">代码片段</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Xcode-部署错误/">Xcode 部署错误</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -223,11 +224,15 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="u5148_u5B9A_u4E49_u8981_u8DF3_u8F6C_u7684_u951A_u70B9"><a href="#u5148_u5B9A_u4E49_u8981_u8DF3_u8F6C_u7684_u951A_u70B9" class="headerlink" title="先定义要跳转的锚点"></a>先定义要跳转的锚点</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="tag">span</span> id = <span class="string">"anchor"</span>&gt;锚点&lt;/span&gt;</span><br></pre></td></tr></table></figure>
-<font color="red">注: id是您随意取的,当然必须是唯一的.</font>
+        <p>开发工具: Xcode 7.2<br>测试设备: iPhone 6S Plus  系统版本: iOS 9.2<br>         Apple Watch     系统版本: watchOS 2.0</p>
+<p>因为Xcode 7.2默认development target是watchOS 2.1,所以这里要修改development target.</p>
+<div align="center"><br><img src="http://7xpl1c.com1.z0.glb.clouddn.com/BC410E27-6EAE-40B7-AA9A-5AA390CBCBBC.jpg?imageMogr2/thumbnail/!50p" alt=""><br></div>
 
-<h2 id="u8DF3_u8F6C"><a href="#u8DF3_u8F6C" class="headerlink" title="跳转"></a>跳转</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="link_label">锚点</span>](<span class="link_url">#anchor</span>)</span><br></pre></td></tr></table></figure>
-<font color="red">注: []内是要填转的按钮显示的文字,小括号内#后面是跟的id值.因为跳转是根据id跳的.</font>
+<blockquote>
+<blockquote>
+<p>注意: watch app,watch extension和project都要设置.</p>
+</blockquote>
+</blockquote>
 
       
     </div>
@@ -236,13 +241,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2015/12/29/Markdown 实现页面内部跳转/">Markdown实现页面内部跳转</a></p>
+        <p><span>本文标题:</span><a href="/2015/12/24/iOS报错-OS-version-lower-than-deployment-target/">Xcode报错: OS version lower than deployment target</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 soindy 的个人博客">soindy</a></p>
-        <p><span>发布时间:</span>2015年12月29日 - 14时12分</p>
-        <p><span>最后更新:</span>2015年12月29日 - 15时15分</p>
+        <p><span>发布时间:</span>2015年12月24日 - 19时12分</p>
+        <p><span>最后更新:</span>2016年01月14日 - 15时19分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2015/12/29/Markdown 实现页面内部跳转/" title="Markdown实现页面内部跳转">http://yoursite.com/2015/12/29/Markdown 实现页面内部跳转/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/12/29/Markdown 实现页面内部跳转/　　作者: soindy" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2015/12/24/iOS报错-OS-version-lower-than-deployment-target/" title="Xcode报错: OS version lower than deployment target">http://yoursite.com/2015/12/24/iOS报错-OS-version-lower-than-deployment-target/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/12/24/iOS报错-OS-version-lower-than-deployment-target/　　作者: soindy" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -256,15 +261,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/01/04/Hexo常用命令/">
-                    Hexo常用命令
+                <a href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/">
+                    Markdown设置图片大小和对齐方式等操作
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/">
-                    Markdown设置图片大小和对齐方式等操作
+                <a href="/2015/12/24/Apple Watch Human Interface Guidelines/">
+                    Apple Watch Human Interface Guidelines(Watch人机交互指南)官方文档翻译
                 </a>
             </div>
         
@@ -275,7 +280,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#u5148_u5B9A_u4E49_u8981_u8DF3_u8F6C_u7684_u951A_u70B9"><span class="toc-number">1.</span> <span class="toc-text">先定义要跳转的锚点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u8DF3_u8F6C"><span class="toc-number">2.</span> <span class="toc-text">跳转</span></a></li></ol>
+    
 </div>
 <style>
     .left-col .switch-btn {
@@ -338,7 +343,7 @@
 
     <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2015/12/29/Markdown 实现页面内部跳转/" data-title="Markdown实现页面内部跳转" data-url="http://yoursite.com/2015/12/29/Markdown 实现页面内部跳转/"></div>
+    <div class="ds-thread" data-thread-key="2015/12/24/iOS报错-OS-version-lower-than-deployment-target/" data-title="Xcode报错: OS version lower than deployment target" data-url="http://yoursite.com/2015/12/24/iOS报错-OS-version-lower-than-deployment-target/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -377,7 +382,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/01/04/Hexo常用命令/" title="上一篇: Hexo常用命令">
+            <a href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/" title="上一篇: Markdown设置图片大小和对齐方式等操作">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -385,7 +390,7 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/" title="下一篇: Markdown设置图片大小和对齐方式等操作">
+            <a href="/2015/12/24/Apple Watch Human Interface Guidelines/" title="下一篇: Apple Watch Human Interface Guidelines(Watch人机交互指南)官方文档翻译">
                 <i class="fa fa-angle-right"></i>
             </a>
         
