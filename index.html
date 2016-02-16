@@ -185,6 +185,99 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-UIScreen-mainScreen-bounds-size-在iPhone-6和iPhone-6-plus上获取的大小不对" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/16/UIScreen-mainScreen-bounds-size-在iPhone-6和iPhone-6-plus上获取的大小不对/" class="article-date">
+      <time datetime="2016-02-16T06:05:25.000Z" itemprop="datePublished">2016-02-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/16/UIScreen-mainScreen-bounds-size-在iPhone-6和iPhone-6-plus上获取的大小不对/">[UIScreen mainScreen].bounds.size 在iPhone 6和iPhone 6 plus上获取到的尺寸不对</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="u95EE_u9898"><a href="#u95EE_u9898" class="headerlink" title="问题"></a>问题</h2><p>我们使用[UIScreen mainScreen].bounds.size 来获取当前屏幕的尺寸,但是在iPhone 6和iPhone 6 plus上获取到的尺寸不对,仍为4 inch的大小.</p>
+<h2 id="u89E3_u51B3_u529E_u6CD5"><a href="#u89E3_u51B3_u529E_u6CD5" class="headerlink" title="解决办法"></a>解决办法</h2><p>为iPhone 6和iPhone 6 plus添加相应的启动页面.</p>
+<ol>
+<li>点击images.xcassets,选择LaunchImage,勾选iOS 8.0 and Later.</li>
+</ol>
+<div align="center"><br><img src="http://7xpl1c.com1.z0.glb.clouddn.com/2DD39B26-3B46-47B5-A7FC-13917E431E95.jpg?imageMogr2/thumbnail/!100p" alt=""><br></div>
+
+<ol>
+<li>为 Retina HD 4.7 and Retina HD 5.5添加对应的启动图片.</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>注意: 图片的格式要符合要求.具体格式在右边的工具栏中有提示.</p>
+</blockquote>
+</blockquote>
+<h2 id="u539F_u56E0"><a href="#u539F_u56E0" class="headerlink" title="原因"></a>原因</h2><p>个人观点: 为了较旧软件在iPhone 6和iPhone 6 plus上的适配.<br>在iPhone 6和iPhone 6 plus发布之前开发的软件,苹果会默认在大屏幕上对其进行适配.该选项是为了让xcode能知道使用何种的方式对其进行适配.</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+    </div>
+
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+        <script>
+            var yiliaConfig = {
+            fancybox: true,
+            mathjax: true,
+            animate: true,
+            isHome: true,
+            isPost: false,
+            isArchive: false,
+            isTag: false,
+            isCategory: false,
+            open_in_new: false
+            }
+        </script>
+        
+
+  
     <article id="post-没有人是一座孤岛" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -1413,92 +1506,6 @@
       
         <p class="article-more-link">
           <a  href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-        <script>
-            var yiliaConfig = {
-            fancybox: true,
-            mathjax: true,
-            animate: true,
-            isHome: true,
-            isPost: false,
-            isArchive: false,
-            isTag: false,
-            isCategory: false,
-            open_in_new: false
-            }
-        </script>
-        
-
-  
-    <article id="post-iOS报错-OS-version-lower-than-deployment-target" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/24/iOS报错-OS-version-lower-than-deployment-target/" class="article-date">
-      <time datetime="2015-12-24T11:12:23.000Z" itemprop="datePublished">2015-12-24</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/24/iOS报错-OS-version-lower-than-deployment-target/">Xcode报错: OS version lower than deployment target</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              Xcode报错 OS version lower than deployment target.
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Xcode/">Xcode</a><a class="article-category-link" href="/categories/Xcode/watchOS/">watchOS</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Xcode-部署错误/">Xcode 部署错误</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/12/24/iOS报错-OS-version-lower-than-deployment-target/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
