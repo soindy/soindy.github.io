@@ -113,7 +113,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/Apple-Watch/" style="font-size: 15px;">Apple Watch</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/Swift/" style="font-size: 20px;">Swift</a> <a href="/tags/Xcode-Error/" style="font-size: 20px;">Xcode Error</a> <a href="/tags/Xcode-部署错误/" style="font-size: 10px;">Xcode 部署错误</a> <a href="/tags/soindy/" style="font-size: 10px;">soindy</a> <a href="/tags/专业名词/" style="font-size: 10px;">专业名词</a> <a href="/tags/产品设计/" style="font-size: 10px;">产品设计</a> <a href="/tags/人机交互指南/" style="font-size: 10px;">人机交互指南</a> <a href="/tags/代码片段/" style="font-size: 15px;">代码片段</a> <a href="/tags/官方文档翻译/" style="font-size: 15px;">官方文档翻译</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/诗歌/" style="font-size: 10px;">诗歌</a>
+                        <a href="/tags/Apple-Watch/" style="font-size: 15px;">Apple Watch</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/Swift/" style="font-size: 20px;">Swift</a> <a href="/tags/Xcode-Error/" style="font-size: 20px;">Xcode Error</a> <a href="/tags/Xcode-部署错误/" style="font-size: 10px;">Xcode 部署错误</a> <a href="/tags/soindy/" style="font-size: 10px;">soindy</a> <a href="/tags/专业名词/" style="font-size: 10px;">专业名词</a> <a href="/tags/产品设计/" style="font-size: 10px;">产品设计</a> <a href="/tags/人机交互指南/" style="font-size: 10px;">人机交互指南</a> <a href="/tags/代码片段/" style="font-size: 15px;">代码片段</a> <a href="/tags/基本概念/" style="font-size: 10px;">基本概念</a> <a href="/tags/官方文档翻译/" style="font-size: 15px;">官方文档翻译</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/算法设计与设计基础/" style="font-size: 10px;">算法设计与设计基础</a> <a href="/tags/诗歌/" style="font-size: 10px;">诗歌</a>
                     </div>
                 </section>
                 
@@ -184,6 +184,112 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-算法设计与分析基础-基本概念" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/01/算法设计与分析基础-基本概念/" class="article-date">
+      <time datetime="2016-02-29T16:47:10.000Z" itemprop="datePublished">2016-03-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/01/算法设计与分析基础-基本概念/">算法设计与分析基础--基本概念</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <blockquote>
+<blockquote>
+<p>有两种思想,就像摆放在天鹅绒上的宝石那样熠熠生辉,一个是微积分,另一个就是算法.微积分以及在微积分基础上建立起来的数学分析体系造就了现在科学,而算法则造就了现代世界.                     ———大卫.柏林斯基</p>
+</blockquote>
+</blockquote>
+<h2 id="u4EC0_u4E48_u662F_u7B97_u6CD5"><a href="#u4EC0_u4E48_u662F_u7B97_u6CD5" class="headerlink" title="什么是算法"></a>什么是算法</h2><p>算法: 是一系列解决问题的明确指令,也就是说,对于符合一定规范的输入,能够在有限时间内获得要求的输出.</p>
+<p>算法的特点:</p>
+<ol>
+<li>算法的每一个步骤都必须没有歧义,不能有半点含糊.</li>
+<li>必须认真确定算法所处理的输入的值域.</li>
+<li>同一算法可以用不同的形式来描述.</li>
+<li>同一问题,可能存在不同的算法.</li>
+<li>针对同一问题的算法可能基于完全不同的解题思路,而且解题速度也会有显著不同.</li>
+</ol>
+<h2 id="u7B97_u6CD5_u95EE_u9898_u6C42_u89E3_u57FA_u7840"><a href="#u7B97_u6CD5_u95EE_u9898_u6C42_u89E3_u57FA_u7840" class="headerlink" title="算法问题求解基础"></a>算法问题求解基础</h2><p>算法是问题的程序化解决方案.</p>
+<div align="center"><br><img src="http://7xpl1c.com1.z0.glb.clouddn.com/suanfa_IMG_6797.JPG" alt="算法设计分析过程的经典步骤"><br></div>
+
+<h3 id="u7406_u89E3_u95EE_u9898"><a href="#u7406_u89E3_u95EE_u9898" class="headerlink" title="理解问题"></a>理解问题</h3><p>从实践角度看,在设计算法之前,我们首要要对给定问题有完全的理解.应该仔细阅读问题描述,有疑惑就提出来.试着手工处理一些小规模的例子,考虑一下特殊的情况,有必要时继续提出疑问.<br>算法的输入,确定了该算法所解问题的一个实例.严格确定算法需要处理的实例范围很重要(边界值).</p>
+<blockquote>
+<blockquote>
+<p>注意: 正确的算法不应该能处理大多数常见的情况,而且应该能正确的处理所以的合法的输入.因此,第一步很重要,否则不得不冒返工的危险.</p>
+</blockquote>
+</blockquote>
+<h3 id="u4E86_u89E3_u8BA1_u7B97_u8BBE_u5907_u7684_u6027_u80FD"><a href="#u4E86_u89E3_u8BA1_u7B97_u8BBE_u5907_u7684_u6027_u80FD" class="headerlink" title="了解计算设备的性能"></a>了解计算设备的性能</h3><p>我们使用的大多数算法仍运行在类冯.诺依曼系统上.这个体系结构的根本在于随即存取机(RAM:Random Access Machine).它的最主要的假设是:指令逐条运行,每次执行一步操作.相应的,设计在这种机器上运行的算法成为顺序算法(Sequential Algorithm).一些更新式的计算机打破了RAM模型的核心假设,它们可以在同一时间执行多条指令,即并行计算.能够利用这种计算机能力的算法称为并行算法(Parallel Algorithm).</p>
+<h3 id="u5728_u7CBE_u786E_u89E3_u6CD5_u548C_u8FD1_u4F3C_u89E3_u6CD5_u4E4B_u95F4_u505A_u51FA_u9009_u62E9"><a href="#u5728_u7CBE_u786E_u89E3_u6CD5_u548C_u8FD1_u4F3C_u89E3_u6CD5_u4E4B_u95F4_u505A_u51FA_u9009_u62E9" class="headerlink" title="在精确解法和近似解法之间做出选择"></a>在精确解法和近似解法之间做出选择</h3><p>精确解法对应的算法为精确算法(Exact Algorithm).近似解法对应的是近似算法(Approximation Algorithm).有些无法求出精确值,比如在求平方根,解线性方程和求微积分.其次,由于某些问题固有的复杂性,用已知的精确算法来解决该问题可能会很慢.所以,一个近似算法可以作为更负责的精确算法的一部分.</p>
+<h3 id="u7B97_u6CD5_u7684_u8BBE_u8BA1_u6280_u672F"><a href="#u7B97_u6CD5_u7684_u8BBE_u8BA1_u6280_u672F" class="headerlink" title="算法的设计技术"></a>算法的设计技术</h3><h3 id="u786E_u5B9A_u9002_u5F53_u7684_u6570_u636E_u7ED3_u6784"><a href="#u786E_u5B9A_u9002_u5F53_u7684_u6570_u636E_u7ED3_u6784" class="headerlink" title="确定适当的数据结构"></a>确定适当的数据结构</h3><h3 id="u7B97_u6CD5_u7684_u63CF_u8FF0"><a href="#u7B97_u6CD5_u7684_u63CF_u8FF0" class="headerlink" title="算法的描述"></a>算法的描述</h3><h3 id="u7B97_u6CD5_u7684_u6B63_u786E_u6027_u8BC1_u660E"><a href="#u7B97_u6CD5_u7684_u6B63_u786E_u6027_u8BC1_u660E" class="headerlink" title="算法的正确性证明"></a>算法的正确性证明</h3><h3 id="u7B97_u6CD5_u7684_u5206_u6790"><a href="#u7B97_u6CD5_u7684_u5206_u6790" class="headerlink" title="算法的分析"></a>算法的分析</h3><h3 id="u4E3A_u7B97_u6CD5_u5199_u4EE3_u7801"><a href="#u4E3A_u7B97_u6CD5_u5199_u4EE3_u7801" class="headerlink" title="为算法写代码"></a>为算法写代码</h3><h2 id="u91CD_u8981_u7684_u95EE_u9898_u7C7B_u578B"><a href="#u91CD_u8981_u7684_u95EE_u9898_u7C7B_u578B" class="headerlink" title="重要的问题类型"></a>重要的问题类型</h2><h3 id="u6392_u5E8F"><a href="#u6392_u5E8F" class="headerlink" title="排序"></a>排序</h3><h3 id="u67E5_u627E"><a href="#u67E5_u627E" class="headerlink" title="查找"></a>查找</h3><h3 id="u5B57_u7B26_u4E32_u5904_u7406"><a href="#u5B57_u7B26_u4E32_u5904_u7406" class="headerlink" title="字符串处理"></a>字符串处理</h3><h3 id="u56FE_u95EE_u9898"><a href="#u56FE_u95EE_u9898" class="headerlink" title="图问题"></a>图问题</h3><h3 id="u7EC4_u5408_u95EE_u9898"><a href="#u7EC4_u5408_u95EE_u9898" class="headerlink" title="组合问题"></a>组合问题</h3><h3 id="u51E0_u4F55_u95EE_u9898"><a href="#u51E0_u4F55_u95EE_u9898" class="headerlink" title="几何问题"></a>几何问题</h3><h3 id="u6570_u503C_u95EE_u9898"><a href="#u6570_u503C_u95EE_u9898" class="headerlink" title="数值问题"></a>数值问题</h3><h2 id="u57FA_u672C_u6570_u636E_u7ED3_u6784"><a href="#u57FA_u672C_u6570_u636E_u7ED3_u6784" class="headerlink" title="基本数据结构"></a>基本数据结构</h2><h3 id="u7EBF_u6027_u6570_u636E_u7ED3_u6784"><a href="#u7EBF_u6027_u6570_u636E_u7ED3_u6784" class="headerlink" title="线性数据结构"></a>线性数据结构</h3><h3 id="u56FE"><a href="#u56FE" class="headerlink" title="图"></a>图</h3><h3 id="u6811"><a href="#u6811" class="headerlink" title="树"></a>树</h3><h3 id="u96C6_u5408_u4E0E_u5B57_u5178"><a href="#u96C6_u5408_u4E0E_u5B57_u5178" class="headerlink" title="集合与字典"></a>集合与字典</h3><h2 id="u5C0F_u7ED3"><a href="#u5C0F_u7ED3" class="headerlink" title="小结"></a>小结</h2>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/算法/">算法</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/基本概念/">基本概念</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法设计与设计基础/">算法设计与设计基础</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+        <script>
+            var yiliaConfig = {
+            fancybox: true,
+            mathjax: true,
+            animate: true,
+            isHome: true,
+            isPost: false,
+            isArchive: false,
+            isTag: false,
+            isCategory: false,
+            open_in_new: false
+            }
+        </script>
+        
+
   
     <article id="post-UIScreen-mainScreen-bounds-size-在iPhone-6和iPhone-6-plus上获取的大小不对" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -417,7 +523,13 @@
 <h2 id="u6D4B_u8BD5_u65B9_u9762"><a href="#u6D4B_u8BD5_u65B9_u9762" class="headerlink" title="测试方面"></a>测试方面</h2><ul>
 <li>TDD (Test Driven Development) :  测试驱动开发, 是敏捷开发中的一项核心实践和技术，也是一种设计方法论. 原理: 在开发功能代码之前，先编写单元测试用例代码，测试代码确定需要编写什么产品代码. TDD虽是敏捷方法的核心实践，但同样可以适用于其他开发方法和过程. 相关链接: <a href="https://zh.wikipedia.org/wiki/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91" target="_blank" rel="external">wiki</a>.  <a href="http://baike.baidu.com/link?url=3YU-jmbvO8HL-E66C5Xa-Cbvrh7fSDOwW7Y0Rp_5LXSDxEa5gC584QkvsO4soI-fxINHBkN2pLdvSFzFqcXYUBh1xMHNh8Meo7mVFTNRNyO" target="_blank" rel="external">TDD百度百科</a>.</li>
 </ul>
-<h2 id="u64CD_u4F5C_u7CFB_u7EDF"><a href="#u64CD_u4F5C_u7CFB_u7EDF" class="headerlink" title="操作系统"></a>操作系统</h2><h2 id="u786C_u4EF6_u65B9_u9762"><a href="#u786C_u4EF6_u65B9_u9762" class="headerlink" title="硬件方面"></a>硬件方面</h2><h2 id="u6D4F_u89C8_u5668_u65B9_u9762"><a href="#u6D4F_u89C8_u5668_u65B9_u9762" class="headerlink" title="浏览器方面"></a>浏览器方面</h2><ul>
+<h2 id="u64CD_u4F5C_u7CFB_u7EDF"><a href="#u64CD_u4F5C_u7CFB_u7EDF" class="headerlink" title="操作系统"></a>操作系统</h2><h2 id="u4EA7_u54C1_u8BBE_u8BA1"><a href="#u4EA7_u54C1_u8BBE_u8BA1" class="headerlink" title="产品设计"></a>产品设计</h2><h2 id="UI_u8BBE_u8BA1"><a href="#UI_u8BBE_u8BA1" class="headerlink" title="UI设计"></a>UI设计</h2><ul>
+<li><p>PPI (Pixels Per Inch) : 图像的采样率(像素密度),即每英寸所拥有的像素数量.是一个表示打印图像或显示器单位面积上像素的指数.一般用来计量电脑显示器,电视剧,手持设备屏幕的精细程度.通常情况下,没英寸像素值越高,屏幕显示的图像也越精细. 图像的横向（竖向）像素数=打印横向（竖向）分辨率×打印的横向（竖向）尺寸. 相关链接: <a href="https://zh.wikipedia.org/wiki/%E6%AF%8F%E8%8B%B1%E5%AF%B8%E5%83%8F%E7%B4%A0" target="_blank" rel="external">wiki</a>. <a href="http://baike.baidu.com/link?url=_2OY3CCY_O_ZjZOu9c9yW7PNdT2djAVT4tRcXRalV6MWBvpdMg6xOG6WwmvFLH0Tz4jPGRa9-fsfOlhAntH59Fq3RSdYzZdkCQMTUtwmcTO" target="_blank" rel="external">百度百科</a>.</p>
+</li>
+<li><p>DPI (Dots Per Inch) : 打印分辨率(每英寸能打印出的点数,即打印精度).每英寸点数,用于点阵数位影像.意思是每一英寸长度中,取样或可输出点的数目.图像的横向（竖向）像素数/打印横向（竖向）分辨率=打印的横向（竖向）尺寸. 相关链接: <a href="https://zh.wikipedia.org/wiki/%E6%AF%8F%E8%8B%B1%E5%AF%B8%E7%82%B9%E6%95%B0" target="_blank" rel="external">wiki</a>. <a href="http://baike.baidu.com/item/DPI/908073" target="_blank" rel="external">百度百科</a>.</p>
+</li>
+</ul>
+<h2 id="u786C_u4EF6_u65B9_u9762"><a href="#u786C_u4EF6_u65B9_u9762" class="headerlink" title="硬件方面"></a>硬件方面</h2><h2 id="u6D4F_u89C8_u5668_u65B9_u9762"><a href="#u6D4F_u89C8_u5668_u65B9_u9762" class="headerlink" title="浏览器方面"></a>浏览器方面</h2><ul>
 <li><p>SEO (Search Engine Optimization) : 搜索引擎优化. 相关链接: <a href="https://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank" rel="external">wiki</a>. <a href="http://baike.baidu.com/view/1047.htm" target="_blank" rel="external">百度百科</a>.</p>
 </li>
 <li><p>HTML (Hyper text Mark-up Language 超文本标记语言). 标记就是用来描述网页内容的一些特定的符号.HTML不是编程语言,而是一种描述性的标记语言.用于描述网页中内容的显示方式,比如文字以什么颜色,大小来显示.这些都是利用HTML标记来实现的. 相关链接: <a href="https://zh.wikipedia.org/zh/HTML" target="_blank" rel="external">wiki</a>. <a href="http://baike.baidu.com/view/692.htm" target="_blank" rel="external">百度百科</a>.</p>
@@ -1423,92 +1535,6 @@
       
         <p class="article-more-link">
           <a  href="/2015/12/29/Markdown 实现页面内部跳转/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-        <script>
-            var yiliaConfig = {
-            fancybox: true,
-            mathjax: true,
-            animate: true,
-            isHome: true,
-            isPost: false,
-            isArchive: false,
-            isTag: false,
-            isCategory: false,
-            open_in_new: false
-            }
-        </script>
-        
-
-  
-    <article id="hexo-Markdown设置图片大小和对齐方式等操作" class="article article-type-hexo" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/" class="article-date">
-      <time datetime="2015-12-28T03:47:59.000Z" itemprop="datePublished">2015-12-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/">Markdown设置图片大小和对齐方式等操作</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              Markdown设置图片大小和对齐方式等操作.
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Markdown/">Markdown</a><a class="article-category-link" href="/categories/Markdown/代码片段/">代码片段</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/代码片段/">代码片段</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/12/28/Markdown设置图片大小和对齐方式等操作/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
